@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Pet Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="menu">
+    <h2>🐾 Pet Tracker</h2>
+    <a href="index.html" class="active">Главная</a>
+    <a href="calendar.html">Календарь</a>
+</div>
+
+<div class="content">
+    <h1>Мои питомцы</h1>
+    <div id="pets" class="pets"></div>
+    <button onclick="openModal()">+ Добавить питомца</button>
+</div>
+
+<!-- Модальное окно для добавления питомца -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <h3>Добавить питомца</h3>
+        <input id="name" placeholder="Имя питомца">
+        <input id="type" placeholder="Вид (кот, собака...)">
+        <input id="age" placeholder="Возраст">
+        <input id="weight" placeholder="Вес">
+        <input type="file" id="photo">
+        <button onclick="savePet()">Сохранить</button>
+        <button onclick="closeModal()">Закрыть</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
