@@ -15,20 +15,14 @@
 
 <div class="content">
     <h1>Календарь</h1>
-    <div class="calendar-grid">
-        <div class="day-name">Пн</div>
-        <div class="day-name">Вт</div>
-        <div class="day-name">Ср</div>
-        <div class="day-name">Чт</div>
-        <div class="day-name">Пт</div>
-        <div class="day-name">Сб</div>
-        <div class="day-name">Вс</div>
-        <!-- пример дней месяца -->
-        <div class="day">1</div>
-        <div class="day">2</div>
-        <div class="day">3</div>
+    <div class="calendar-header">
+        <button onclick="prevMonth()">◀</button>
+        <h2 id="monthYear"></h2>
+        <button onclick="nextMonth()">▶</button>
     </div>
+    <div class="calendar-grid" id="calendar"></div>
 </div>
 
+<script src="script.js"></script>
 </body>
 </html>

@@ -101,23 +101,53 @@ button {
 .modal input {
     padding: 8px;
 }
-.calendar-grid {
+
+/* Календарь */
+.calendar-header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:10px;
+}
+
+.calendar-header button{
+    padding:5px 10px;
+    border:none;
+    border-radius:5px;
+    background:#3498db;
+    color:white;
+    cursor:pointer;
+}
+
+.calendar-grid{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 10px;
-    margin-top: 20px;
 }
 
-.day-name {
+.day-name{
     font-weight: bold;
     text-align: center;
 }
 
-.day {
+.day{
     background: white;
     border-radius: 8px;
     height: 80px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
+    padding:5px;
+    cursor: pointer;
+}
+
+.event{
+    font-size:12px;
+    margin-top:3px;
+    background:#f1c40f;
+    border-radius:3px;
+    padding:1px 3px;
+    width:90%;
+    text-align:center;
 }
